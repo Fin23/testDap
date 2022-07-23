@@ -11,6 +11,7 @@ const style = {
     wrapper: `bg-[#04111d] w-screen px-[1.2rem] py-[0.8rem] flex `,
     logoContainer: `flex items-center cursor-pointer`,
     logoText: ` ml-[0.8rem] text-white font-semibold text-2xl`,
+    imgWrap:`rounded-full border bg-[#bcb2ae] overflow-hidden`,
     searchBar: `flex flex-1 mx-[0.8rem] w-max-[520px] items-center bg-[#363840] rounded-[0.8rem] hover:bg-[#4c505c]`,
     searchIcon: `text-[#8a939b] mx-3 font-bold text-lg`,
     searchInput: `h-[2.6rem] w-full border-0 bg-transparent outline-0 ring-0 px-2 pl-0 text-[#e6e8eb] placeholder:text-[#8a939b]`,
@@ -23,7 +24,10 @@ const Header = ()=>{
     return <div className={style.wrapper}>
     <Link href="/"> 
     <div className={style.logoContainer}>
+        <div className={style.imgWrap}>
+
         <Image src={chong}  height={40} width={40}/>
+        </div>
         <div className={style.logoText}>Rosco's market </div>
         </div>
     </Link> 
